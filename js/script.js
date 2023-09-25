@@ -7,7 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var markers = L.markerClusterGroup();
 
 // Load the JSON data from a file
-fetch('pmr.json') // Replace 'addressPoints.json' with the actual path to your JSON file
+fetch('json/pmr.json') // Replace 'addressPoints.json' with the actual path to your JSON file
   .then(response => response.json())
   .then(data => {
     data.forEach(point => {
